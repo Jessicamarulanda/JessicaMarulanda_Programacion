@@ -14,7 +14,7 @@ public class Ejercicio7_Arrays {
             }
             if (numerosA[i]< 5){
                 numerosA [i] *= 2;
-               // System.out.printf(numerosA[i]+ "," + " " + "\t" );
+               // System.out.pritf(numerosA[i]+ "," + " " + "\t" );
             }
             //numerosA[i]= numerosA[i] +(int) (Math.random() ) * (5 - 10 ) - 10;
             int variable = (int)(Math.random() * (5 -5 )) + 1;
