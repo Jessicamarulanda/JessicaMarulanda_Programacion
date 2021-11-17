@@ -17,7 +17,7 @@ public class Ejercicio7_Arrays {
                // System.out.printf(numerosA[i]+ "," + " " + "\t" );
             }
             //numerosA[i]= numerosA[i] +(int) (Math.random() ) * (5 - 10 ) - 10;
-            int variable = (int)(Math.random() * (5 -5 )) + 1;
+            int variable = (int)Math.floor(Math.random() * (-5 + 5)) + 1;
             System.out.println(variable);
 
         }
