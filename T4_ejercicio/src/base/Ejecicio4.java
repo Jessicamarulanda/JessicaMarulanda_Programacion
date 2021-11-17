@@ -1,8 +1,5 @@
 package base;
 
-import java.awt.desktop.SystemEventListener;
-import java.util.Scanner;
-
 public class Ejecicio4 {
     public static void main (String [] args){
         int[] numeros = new int [20];
