@@ -6,7 +6,7 @@ public class Ejercicio4_Arrays {
     public static void main (String [] args){
         Scanner entradaTeclado =  new Scanner(System.in);
         int respuesta = 0;
-        int numeromax = 0;
+        int numeromax = -99999;
         int numeroMini = 99999;
         System.out.println("Intruduce la longitud deseada");
         respuesta = entradaTeclado.nextInt();

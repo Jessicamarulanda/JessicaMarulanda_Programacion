@@ -9,6 +9,8 @@ public class Ejercicio7_Arrays {
         int variableAletoria = 0;
         int posicion = -1;
         int variableSuma = 0;
+        int variableCa1= 0;
+        int variableCa2 = 0;
         System.out.printf("Los números Asugnados son: %n");
         for (int i = 0 ; i < numerosA.length; i++) {
             System.out.printf(numerosA[i] + "," + " " + "\t");
@@ -53,6 +55,22 @@ public class Ejercicio7_Arrays {
                 System.out.printf("valor actualizado:"+ variableSuma + "\t %n" );
             }
 
+
+
+        }
+        System.out.printf(" números moviendose una posición: %n");
+        for (int i = 0 ; i < numerosA.length ; i++){
+            if ( i == 0){
+                System.out.printf(numerosA[numerosA.length-1]+ ", \t");
+            }else{
+                System.out.printf(numerosA[i-1] + ", \t") ;
+            }
+        }
+        System.out.println("intercambiando posición");
+        for (int  i = 0; i < numerosA.length; i = i + 2){
+            variableCa1 = numerosA [i+1];
+            variableCa2 = numerosA[i];
+            System.out.printf(variableCa1 + variableCa2 + ", \t");
 
         }
     }
