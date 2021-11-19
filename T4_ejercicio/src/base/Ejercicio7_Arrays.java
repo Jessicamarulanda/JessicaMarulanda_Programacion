@@ -71,6 +71,7 @@ public class Ejercicio7_Arrays {
             variableCa1 = numerosA [i+1];
             variableCa2 = numerosA[i];
             System.out.printf(variableCa1 + variableCa2 + ", \t");
+            //hola
 
         }
     }
