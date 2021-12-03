@@ -36,6 +36,12 @@ public class Multidimencional2 {
                 }
             }
         }
+          System.out.printf("la suma de la primera fila es : " + sumafila1);
+        System.out.printf("la suma de la ultima fila es : " + sumafilan);
+        System.out.printf("la suma de la primera columna es : " + sumacolumnas1);
+        System.out.printf("la suma de la ultima columna es : " + sumacolumnasn);
+
+
 
     }
 }
