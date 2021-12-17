@@ -85,6 +85,6 @@ public class Ejercicio10 {
                         System.out.println("Opción no valida");
                         break;
                 }
-            }while(respuesta !=5);
+            }while(respuesta != 5);
     }
 }
