@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/JessicaMarulanda_Programacion.iml" filepath="$PROJECT_DIR$/.idea/JessicaMarulanda_Programacion.iml" />
       <module fileurl="file://$PROJECT_DIR$/T4_ejercicio/T4_ejercicio.iml" filepath="$PROJECT_DIR$/T4_ejercicio/T4_ejercicio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/T5_PO/T5_PO.iml" filepath="$PROJECT_DIR$/T5_PO/T5_PO.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tema4_arrays/Tema4_arrays.iml" filepath="$PROJECT_DIR$/Tema4_arrays/Tema4_arrays.iml" />
     </modules>
   </component>

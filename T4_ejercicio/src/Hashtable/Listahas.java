@@ -1,5 +1,6 @@
 package Hashtable;
 
+import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Scanner;
 
@@ -7,20 +8,29 @@ public class Listahas {
     public static void main(String[] args) {
         Scanner entradaTeclado = new Scanner(System.in);
         String respuesta = null;
-       Hashtable <String,Object[]> listaCoche = new Hashtable();
+        int contador = 0;
+        String matricula= null;
+       Hashtable <String,Object> listaCoche = new Hashtable();
+        listaCoche.put("RH5876",new Object[]{"RH5876","201","VW","3000"});
         listaCoche.put("AV56678",new Object[]{"AV56678","A5","Mercedes","5221"});
         listaCoche.put("XH5647",new Object[]{"XH5647","Fiesta","ford","65424"});
-        listaCoche.put("RH5876",new Object[]{"RH5876","201","VW","3000"});
-        System.out.println("Ingerese la matricula a buscar");
-        respuesta = entradaTeclado.next();
-        Object [] coche = listaCoche.get(respuesta);
-        if(coche != null){
-            for (Object item:coche) {
-                System.out.println(item + "\t");
-            }
-        }else{
-            System.out.println("No esta en la lista");
-        }
+         Enumeration<Object> elementos = listaCoche.elements();
+         Enumeration<String> listaClaves = listaCoche.keys();
+        /* while(listaClaves.hasMoreElements()){
+           String clave=listaClaves.nextElement();
+           Object[] elemento = (Object[]) listaCoche.get(clave);
+           for(int i = 0; i < elemento.length; i++)
+               System.out.println(elemento[i]);
+               System.out.println();
+         }*/
+
+         while (elementos.hasMoreElements()){
+             Object[] elemento2 = (Object[]) elementos.nextElement();
+             for (Object item:elemento2) {
+                 System.out.println(item);
+             }
+             System.out.println();
+         }
     }
 }
 
