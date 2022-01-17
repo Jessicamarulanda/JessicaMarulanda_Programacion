@@ -21,36 +21,43 @@ public class menu {
                 System.out.println("Introcuce la Altura");
                 altura = entradaTeclado.nextInt();
                 Triangulo triangulo1 = new Triangulo(base,altura);
-                System.out.println("Que operación quieres hacer:");
-                System.out.println("A)Calcular área");
-                System.out.println("B)Mostrar Datos");
-                respuesta = entradaTeclado.next();
-                if (respuesta.equalsIgnoreCase("A")){
-                    triangulo1.calcularArea();
-                }else if (respuesta .equals("B")|| respuesta.equals("b")){
-                    triangulo1.mostrasDatos();
-                }else{
-                    System.out.println("La opción incada es incorrecta");
-                }
+                    System.out.println("Que operación quieres hacer:");
+                    System.out.println("A)Calcular área");
+                    System.out.println("B)Mostrar Datos");
+                    System.out.println("C)Salir");
+                    respuesta = entradaTeclado.next();
+                    if (respuesta.equalsIgnoreCase("A")) {
+                        triangulo1.calcularArea();
+                    } else if (respuesta.equalsIgnoreCase("B")) {
+                        triangulo1.mostrasDatos();
+                    } else {
+                        System.out.println("La opción incada es incorrecta");
+                    }
                 break;
             case 2:
-                String respuesta2;
+                char respuesta2;
                 System.out.println("Introcuce El radio");
                 radio = entradaTeclado.nextDouble();
                 Circulo circulo1 = new Circulo(radio);
-                System.out.println("Que operación quieres hacer:");
-                System.out.println("A)Calcular área");
-                System.out.println("B)Calcular Diámetro");
-                System.out.println("C)Mostrar Datos");
-                respuesta2 = entradaTeclado.next();
-                switch (respuesta2){
-                    case "A": 
-
-                        break;
-                }
-
-
-
+                    System.out.println("Que operación quieres hacer:");
+                    System.out.println("A)Calcular área");
+                    System.out.println("B)Calcular Diámetro");
+                    System.out.println("C)Mostrar Datos");
+                    respuesta2 = entradaTeclado.next().charAt(0);
+                    switch (respuesta2) {
+                        case 'A':
+                            circulo1.calcularArea();
+                            break;
+                        case 'B':
+                            circulo1.calcularDiametro();
+                            break;
+                        case 'C':
+                            circulo1.mostrasDatos();
+                            break;
+                        default:
+                            System.out.println("Opción incorrecta");
+                            break;
+                    }
                 break;
         }
 

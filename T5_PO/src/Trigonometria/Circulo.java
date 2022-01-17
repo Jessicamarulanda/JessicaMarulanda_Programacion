@@ -15,6 +15,7 @@ public class Circulo {
     }
     public  void calcularDiametro(){
         diametro = 2 * radio;
+        System.out.println("El Diámetro del circulo es: " + diametro);
     }
     public void mostrasDatos(){
         System.out.println("Radio:" + radio);
