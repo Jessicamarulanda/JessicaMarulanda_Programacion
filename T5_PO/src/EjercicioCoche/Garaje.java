@@ -7,7 +7,7 @@ public class Garaje {
     public Garaje (){
 
     }
- 
+
      public boolean aceptarCoche (Coche coche, String averiaAsociada){
         if (this.coche != null){
             return  false;
