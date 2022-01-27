@@ -25,7 +25,6 @@ public class menu {
                         System.out.println("Que operación quieres hacer:");
                         System.out.println("A)Calcular área");
                         System.out.println("B)Mostrar Datos");
-                        System.out.println("C)Salir");
                         respuesta = entradaTeclado.next();
                         if (respuesta.equalsIgnoreCase("A")) {
                             triangulo1.calcularArea();
@@ -34,6 +33,8 @@ public class menu {
                         } else {
                             System.out.println("La opción incada es incorrecta");
                         }
+                        System.out.println("Pulse enter para continuar");
+                        entradaTeclado.nextLine();
                     break;
                 case 2:
                     int respuesta2;
@@ -45,7 +46,7 @@ public class menu {
                         System.out.println("1)Calcular área");
                         System.out.println("2)Calcular Diámetro");
                         System.out.println("3)Mostrar Datos");
-                        respuesta2 = entradaTeclado.next().charAt(0);
+                        respuesta2 = entradaTeclado.nextInt();
                         switch (respuesta2) {
                             case 'A':
                                 circulo1.calcularArea();
@@ -61,6 +62,8 @@ public class menu {
                                 break;
                         }
                     } while (respuesta2 > 3);
+                    System.out.println("Pulse enter para continuar");
+                    entradaTeclado.nextLine();
                     break;
 
                 case 3:
@@ -89,6 +92,8 @@ public class menu {
                                 break;
                         }
                     } while (respuesta1 > 3);
+                    System.out.println("Pulse enter para continuar");
+                    entradaTeclado.next();
 
                     break;
 
@@ -97,6 +102,6 @@ public class menu {
                     break;
             }
 
-        } while (opcion > 3);
+        } while (opcion != 4);
     }
 }

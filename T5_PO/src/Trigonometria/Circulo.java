@@ -10,7 +10,7 @@ public class Circulo {
         this.radio = radio;
     }
     public void calcularArea(){
-        area  = 3.1416 * (2 * radio);
+        area  = Math.PI * (2 * radio);
         System.out.println("El area del circulo es: " + area);
     }
     public  void calcularDiametro(){
