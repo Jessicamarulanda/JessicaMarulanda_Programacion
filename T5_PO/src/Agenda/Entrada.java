@@ -6,6 +6,7 @@ public class Entrada {
     public static void main(String[] args) {
         Scanner entradaEnteclado = new Scanner(System.in);
         Agenda agenda = new Agenda();
+        boolean encontrada ;
      String  nombre, dni, apellido;
      int telefono;
      int opcion;
@@ -19,14 +20,28 @@ public class Entrada {
          opcion = entradaEnteclado.nextInt();
          switch (opcion){
              case 1:
+                 encontrada = false;
                  System.out.println("Ingrese el nombre");
                  nombre = entradaEnteclado.next();
                  System.out.println("Ingrese su DNI");
                  dni = entradaEnteclado.next();
                  System.out.println("Ingrese su telefono");
                  telefono = entradaEnteclado.nextInt();
+                 for (Persona item: agenda.getLista()) {
+                     if(dni.equalsIgnoreCase(item.getDni())){
+                         encontrada = true;
+                         System.out.println("Persona ya existe en la agenda ");
+                         System.out.println();
+
+                     }
+                 }
+
+                 if(!encontrada){
                      Persona persona = new Persona(nombre, dni, telefono);
                      agenda.agregarPersona(persona);
+                     System.out.println("Persona añadida a la genda");
+                     System.out.println();
+                 }
                  break;
 
              case 2 :

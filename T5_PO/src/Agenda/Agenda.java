@@ -10,8 +10,9 @@ public class Agenda {
       lista = new ArrayList();
     }
 
-    public void agregarPersona(Persona persona){
-     lista.add(persona);
+    public void agregarPersona(Persona persona)
+    {
+      lista.add(persona);
     }
 
 
