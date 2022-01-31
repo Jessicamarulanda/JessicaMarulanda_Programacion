@@ -32,6 +32,7 @@ public class Entrada {
                          encontrada = true;
                          System.out.println("Persona ya existe en la agenda ");
                          System.out.println();
+                         break;
 
                      }
                  }
