@@ -21,12 +21,12 @@ public class Entrada {
         cocheB.frenar(30);
         if (cocheA.getKilometrsReco() > cocheB.getKilometrsReco()){
             System.out.println("El coche ganor con Modelo:" + cocheA.getModelo());
-            System.out.println("El coche ganor con Matricula:" + cocheA.getMatricula());
-            System.out.println("El coche ganor con Kilometros:" + cocheA.getKilometrsReco());
+            System.out.println(" Matricula:" + cocheA.getMatricula());
+            System.out.println(" Kilometros:" + cocheA.getKilometrsReco());
         }else {
             System.out.println("El coche ganor con Modelo:" + cocheB.getModelo());
-            System.out.println("El coche ganor con Matricula:" + cocheB.getMatricula());
-            System.out.println("El coche ganor con Kilometros:" + cocheB.getKilometrsReco());
+            System.out.println("Matricula:" + cocheB.getMatricula());
+            System.out.println(" Kilometros:" + cocheB.getKilometrsReco());
         }
     }
 }

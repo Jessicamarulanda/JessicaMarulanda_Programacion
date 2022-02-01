@@ -20,7 +20,8 @@ public class Coche {
   this.caballos = caballos;
  }
   public void acelerar(int velocidad){
-   this.velocidad +=  velocidad *(caballos * (int)((Math.random()* 10) + 1));
+    this.velocidad += velocidad;
+   this.kilometrsReco =  this.velocidad *(caballos * (int)((Math.random()* 10) + 1));
    if(this.velocidad > 180){
        this.velocidad = 180;
        System.out.println("Velocidad maxima alcanzada");
