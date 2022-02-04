@@ -7,7 +7,7 @@ public class Agenda {
     private String nombre, dni;
     private int telefono;
     public Agenda(){
-      lista = new ArrayList();
+        lista = new ArrayList();
     }
 
     public void agregarPersona(Persona persona)

@@ -6,11 +6,11 @@ public class Banco {
     private String nombre,cif;
     private ArrayList cuenta;
 
-    public Banco(String nombre, String cif, int cuentas)
+    public Banco(String nombre, String cif)
     {
         this.nombre = nombre;
         this.cif = cif;
-        this.cuenta = cuentas;
+
     }
 
     public String getNombre() {

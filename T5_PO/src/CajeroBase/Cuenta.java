@@ -6,6 +6,7 @@ public class Cuenta {
     private String id;
     private int numeroCuenta;
     private  Cliente cliente;
+
     public Cuenta (String id, int pin,double saldo,Cliente cliente){
         this.id = id;
         this.pin = pin;
