@@ -5,7 +5,7 @@ public  class LlamadasProvidencia extends Llamadas
     public LlamadasProvidencia() {
     }
 
-    public LlamadasProvidencia(int numeroDestino, int numeroOrigen, double duracion) {
+    public LlamadasProvidencia(int numeroDestino, int numeroOrigen, int duracion) {
         super(numeroDestino, numeroOrigen, duracion);
     }
 

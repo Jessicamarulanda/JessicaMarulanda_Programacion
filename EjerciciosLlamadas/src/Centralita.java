@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 
 public class Centralita {
-    ArrayList<Llamadas> listaLlamadas;
-    int costeTotal;
+   private  ArrayList<Llamadas> listaLlamadas;
+    private double costeTotal;
     public Centralita ()
     {
         listaLlamadas = new ArrayList<>();
@@ -10,28 +10,28 @@ public class Centralita {
     public void agragarLlamada(Llamadas llamada)
     {
         listaLlamadas.add(llamada);
-        System.out.println("Llamada guardada correctamente con los datos:");
-        System.out.println("Número origen:" + llamada.getNumeroOrigen() );
-        System.out.println("Número Destino:" + llamada.getNumeroDestino());
-        System.out.println("Duración:" + llamada.getDuracion());
-        System.out.println("Coste" + llamada.getCoste());
+       llamada.mostrarDatos();
     }
 
-    public double costeTotal()
+    public void costeTotal()
     {
         for (Llamadas llamada:listaLlamadas)
         {
             costeTotal += llamada.getCoste();
         }
 
-        return costeTotal;
+        System.out.println("El coste totl es: " + costeTotal);
     }
 
     public void llamadasRealizadas()
     {
         for (Llamadas llamadas: listaLlamadas)
-        {
+        {   System.out.println(llamadas.getClass().getSimpleName());
+            if(llamadas instanceof LlamadaNacional) {
+                ((LlamadaNacional)llamadas).mostrarDatos();
+            }
 
+            llamadas.mostrarDatos();
         }
     }
 

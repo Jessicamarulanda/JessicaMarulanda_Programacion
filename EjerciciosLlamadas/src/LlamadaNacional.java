@@ -3,14 +3,15 @@ public   class LlamadaNacional extends Llamadas{
 
     public LlamadaNacional(){}
 
-    public LlamadaNacional(int numeroDestino, int numeroOrigen, double duracion, int franja) {
+    public LlamadaNacional(int numeroDestino, int numeroOrigen, int duracion, int franja) {
         super(numeroDestino, numeroOrigen, duracion);
         this.franja = franja;
+        calcularCoste();
     }
     @Override
     public void mostrarDatos()
     { super.mostrarDatos();
-        this.franja = franja;
+       System.out.println("la franja Nacional: " + franja);
     }
 
     @Override

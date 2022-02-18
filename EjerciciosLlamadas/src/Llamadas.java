@@ -1,9 +1,9 @@
 public abstract class Llamadas {
-   protected int numeroOrigen,numeroDestino;
-   protected double coste,duracion;
+   protected int numeroOrigen,numeroDestino,duracion;
+   protected double coste;
 
     public Llamadas(){}
-    public Llamadas(int numeroDestino,int numeroOrigen,double duracion)
+    public Llamadas(int numeroDestino,int numeroOrigen,int duracion)
     {
         this.numeroDestino = numeroDestino;
         this.numeroOrigen = numeroOrigen;
@@ -51,7 +51,7 @@ public abstract class Llamadas {
         return duracion;
     }
 
-    public void setDuracion(double duracion) {
+    public void setDuracion(int duracion) {
         this.duracion = duracion;
     }
 }
