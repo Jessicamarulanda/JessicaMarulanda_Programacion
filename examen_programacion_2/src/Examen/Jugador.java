@@ -1,30 +1,26 @@
 package Examen;
 
 public class Jugador extends Persona {
-    private  String posicion;
-    private  double sueldo;
+    private String posicion;
 
-    public Jugador(){
+    public Jugador() {
 
     }
 
-    public Jugador(String nombre, String apellido, String dni, int edad, String posicion, double sueldo) {
-        super(nombre, apellido, dni, edad);
+    public Jugador(String nombre, String apellido, String dni, int edad,double sueldo,String posicion) {
+        super(nombre, apellido, dni, edad,sueldo);
         this.posicion = posicion;
-        this.sueldo = sueldo;
     }
 
     @Override
-    public void calcularSueldo()
-    {
-       this.sueldo = sueldo + (sueldo/2);
+    public void calcularSueldo() {
+        this.sueldo = this.sueldo * 1.5;
     }
 
     @Override
-    public void mostrarDatos()
-    { super.mostrarDatos();
+    public void mostrarDatos() {
+        super.mostrarDatos();
         System.out.println("Posición:" + this.posicion);
-        System.out.println("Sueldo:" + this.sueldo);
     }
 
     public String getPosicion() {

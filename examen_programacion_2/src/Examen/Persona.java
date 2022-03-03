@@ -3,15 +3,19 @@ package Examen;
 public abstract class Persona {
     protected String nombre, apellido, dni;
     protected int edad;
+    protected double sueldo;
 
     public Persona() {
     }
 
-    public Persona(String nombre, String apellido, String dni, int edad) {
+    public Persona(String nombre, String apellido, String dni, int edad,double sueldo) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.dni = dni;
         this.edad = edad;
+        this.sueldo = sueldo;
+        calcularSueldo();
+
     }
 
     public void mostrarDatos() {
@@ -19,6 +23,7 @@ public abstract class Persona {
         System.out.println("Apellido:" + this.apellido);
         System.out.println("Dni:" + this.dni);
         System.out.println("Edad:" + this.edad);
+        System.out.println(this.sueldo);
 
     }
 
