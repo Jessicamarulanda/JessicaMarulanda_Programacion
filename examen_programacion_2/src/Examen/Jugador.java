@@ -14,7 +14,7 @@ public class Jugador extends Persona {
 
     @Override
     public void calcularSueldo() {
-        this.sueldo = this.sueldo * 1.5;
+        this.sueldo = this.sueldo * (this.sueldo/2);
     }
 
     @Override

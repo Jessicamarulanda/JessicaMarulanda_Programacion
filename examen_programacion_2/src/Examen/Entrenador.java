@@ -15,7 +15,7 @@ public class Entrenador extends Persona {
 
     public void calcularSueldo() {
         //System.out.println(sueldo);
-       this.sueldo = this.sueldo *0.25;
+       this.sueldo = this.sueldo * (this.sueldo /4);
 
     }
 
