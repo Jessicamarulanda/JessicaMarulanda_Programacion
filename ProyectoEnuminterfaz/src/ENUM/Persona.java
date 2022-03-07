@@ -1,16 +1,24 @@
 package ENUM;
 
-public  abstract class Persona {
-    protected  String nombre,apellido;
-    protected  int sueldo;
+public abstract class Persona {
 
-    public Persona(String nombre, String apellido, int sueldo) {
+    protected String nombre, apellido;
+    protected double sueldo;
+
+    public Persona(String nombre, String apellido, double sueldo) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.sueldo = sueldo;
+        calcularSueldo();
     }
 
-    public abstract  void calcularSueldo();
+    public void mostrarDatos(){
+        System.out.println(nombre);
+        System.out.println(apellido);
+        System.out.println(sueldo);
+    }
+
+    public abstract void calcularSueldo();
 
     public String getNombre() {
         return nombre;
@@ -28,7 +36,7 @@ public  abstract class Persona {
         this.apellido = apellido;
     }
 
-    public int getSueldo() {
+    public double getSueldo() {
         return sueldo;
     }
 
