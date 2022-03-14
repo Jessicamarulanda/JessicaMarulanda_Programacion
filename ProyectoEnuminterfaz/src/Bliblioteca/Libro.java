@@ -6,7 +6,7 @@ public final class Libro extends Elemento implements Prestar{
 
     public Libro(){}
 
-    public Libro(String id, String seccion, String titulo, String autor, String editorial, int numeroPginas,String ISBN) {
+    public Libro(int id, String seccion, String titulo, String autor, String editorial, int numeroPginas,String ISBN) {
         super(id, seccion, titulo);
         this.autor = autor;
         this.editorial = editorial;
@@ -24,12 +24,14 @@ public final class Libro extends Elemento implements Prestar{
     }
     @Override
     public boolean prestar() {
+        setEstado(false);
         return false;
     }
 
     @Override
     public boolean devolver() {
-        return false;
+        setEstado(true);
+        return true;
     }
 
     public String getAutor() {

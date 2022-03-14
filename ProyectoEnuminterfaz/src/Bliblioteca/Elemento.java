@@ -1,11 +1,12 @@
 package Bliblioteca;
 
 public abstract class Elemento {
-   protected String id,seccion,ISBN,titulo;
+   protected String seccion,ISBN,titulo;
+   protected int id;
    protected boolean estado;
    public Elemento(){}
 
-    public Elemento(String id, String seccion, String titulo) {
+    public Elemento(int id, String seccion, String titulo) {
         this.id = id;
         this.seccion = seccion;
         this.titulo = titulo;
@@ -18,11 +19,11 @@ public abstract class Elemento {
         System.out.println("Titulo: " + this.titulo);
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 

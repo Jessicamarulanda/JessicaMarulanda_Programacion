@@ -4,7 +4,7 @@ public  final class Revista extends Elemento implements Prestar
 {   private String ISBN;
     public Revista() {}
 
-    public Revista(String id, String seccion, String titulo,String ISBN) {
+    public Revista(int id, String seccion, String titulo,String ISBN) {
         super(id, seccion, titulo);
         this.ISBN = ISBN;
     }

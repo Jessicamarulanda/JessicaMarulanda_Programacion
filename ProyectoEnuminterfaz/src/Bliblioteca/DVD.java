@@ -6,9 +6,9 @@ public final class DVD extends Elemento {
 
     public DVD() {}
 
-    public DVD(String id, String seccion, String titulo, String anioEDj, String director, String actores, TipoDvd tipo) {
+    public DVD(int id, String seccion, String titulo, String anioED, String director, String actores, TipoDvd tipo) {
         super(id, seccion, titulo);
-        this.anioED = anioEDj;
+        this.anioED = anioED;
         this.director = director;
         this.actores = actores;
         this.tipo = tipo;

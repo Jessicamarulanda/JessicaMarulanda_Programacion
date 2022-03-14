@@ -44,4 +44,37 @@ public class Biblioteca {
             }
         }
     }
+
+    public void mostrarDisponible()
+    {
+        for (Elemento item:listaElemento)
+        { if(item instanceof Prestar)
+        { if(item.getEstado())
+          {
+              item.mostrarDatos();
+          }
+
+        }
+
+        }
+    }
+
+    public void mostrarElementoSocio(String dni)
+    {
+        for (Persona item: listaPersonas)
+        {
+          if(item instanceof Socio)
+          {
+              if(item.getDni().equalsIgnoreCase(dni))
+              {
+                  for (Prestar prestar: ((Socio) item).getListaPrestamo())
+                  {
+                      ((Elemento)prestar).mostrarDatos();
+                  }
+              }
+          }
+        }
+    }
+
+
 }

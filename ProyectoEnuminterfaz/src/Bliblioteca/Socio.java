@@ -2,15 +2,15 @@ package Bliblioteca;
 
 import java.util.ArrayList;
 
-public  final class Socio extends Persona
-{ private int numeroSocios;
-private ArrayList <Prestar> listaPrestamo;
+public  final class Socio extends Persona {
+    private int numeroSocios;
+   private ArrayList <Prestar> listaPrestamo;
 
     public Socio() {}
 
-    public Socio(String nombre, String apellido, String dni) {
+    public Socio(String nombre, String apellido, String dni, int numeroSocios) {
         super(nombre, apellido, dni);
-        this.numeroSocios ++;
+        this.numeroSocios = numeroSocios;
         listaPrestamo = new ArrayList<>();
     }
 
@@ -18,6 +18,11 @@ private ArrayList <Prestar> listaPrestamo;
     public void mostrarDatos() {
         super.mostrarDatos();
         System.out.println("Numero de socios" + this.numeroSocios);
+        System.out.println("Prestmos:");
+        for (Prestar item: listaPrestamo)
+        {
+            ((Elemento)item).mostrarDatos();
+        }
     }
 
     public int getNumeroSocios() {
