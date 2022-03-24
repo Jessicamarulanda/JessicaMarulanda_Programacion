@@ -6,7 +6,7 @@ public final class CD extends Elemento implements Prestar {
 
     public CD() {}
 
-    public CD(String id, String seccion, String titulo, String anioED, TipoCD tipo) {
+    public CD(int id, String seccion, String titulo, String anioED, TipoCD tipo) {
         super(id, seccion, titulo);
         this.anioED = anioED;
         this.tipo = tipo;
