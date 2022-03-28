@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2eb15f46-3d44-46c8-beda-9b27270e4232" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Generico/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Generico/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Generico/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Generico/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Generico/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Generico/Generico.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Generico/src/Camiseta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Generico/src/Coche.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Generico/src/Coleccion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Generico/src/ColeccionEspecifica.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Generico/src/Coleccionable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Generico/src/Disco.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Generico/src/Entrada.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Generico/src/Organizable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Generico/src/Partido.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Torneo/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Torneo/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Torneo/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Torneo/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Torneo/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Torneo/Torneo.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Torneo/out/production/Torneo/Entrada.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Torneo/out/production/Torneo/Torneo$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Torneo/out/production/Torneo/Torneo$Equipo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Torneo/out/production/Torneo/Torneo$Partido.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Torneo/out/production/Torneo/Torneo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Torneo/src/Entrada.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Torneo/src/Torneo.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="270r8Mi8S4WwX0teuhoyb5PG83m" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Tema_7" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2eb15f46-3d44-46c8-beda-9b27270e4232" name="Changes" comment="" />
+      <created>1648467685504</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648467685504</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
