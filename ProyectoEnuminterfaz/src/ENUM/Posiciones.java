@@ -3,7 +3,7 @@ package ENUM;
 public enum Posiciones {
 
     // objetos precargados
-    // si quiero sacar el String del tiempo .name()
+    //si quiero sacar el String del tiempo .name()
     portero("portero",1000), defensa("defensa",1500),
     medio("mediocentro",2000), delantero("delantero",3000);
 
