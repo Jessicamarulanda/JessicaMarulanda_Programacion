@@ -1,0 +1,35 @@
+{
+  "nombre": "Jessica",
+  "apellido": "Marulanda",
+  "edad": 22,
+  "hobbies": [
+    "Musica",
+    "Deporte",
+    "Cine",
+    "Informatica"
+  ],
+  "conocimiento": [
+    {
+      "concepto": "Programcion",
+      "experiencia": 12,
+      "detalle": [
+        "java",
+        "html",
+        "css",
+        "javascrip",
+        "mysql",
+        "powershell"
+      ]
+    },
+    {
+      "concepto": "informatica",
+      "experiencia": 10,
+      "detalle": [
+        "maya",
+        "3dmax",
+        "blender",
+        "unity"
+      ]
+    }
+  ]
+}
