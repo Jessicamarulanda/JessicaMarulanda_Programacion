@@ -3,7 +3,7 @@ package controller;
 import java.io.*;
 
 public class FicherosController {
-
+    String cadena = null;
     public void getFileInfo(File file){
 
         System.out.println("Informacion sobre fichero");
@@ -84,21 +84,15 @@ public class FicherosController {
             e.printStackTrace();
         }
     }
-    public void escrituraFichero (File file)
+    public void escrituraFichero (File file,String cadena)
     {
         FileWriter fileWriter = null;
         try {
             fileWriter = new FileWriter(file, true);
             char letra;
             int cifrado;
-            String lineaEscribir = "Esto es un ejemplo de una linea a escribir dentro del fichero ";
-            String[] listaletra = lineaEscribir.split("");
-            for (String item : listaletra) {
-                letra = (item.charAt(0));
-                cifrado = (((byte) letra) * 3) / 2;
-                fileWriter.write(cifrado);
-                System.out.println(cifrado);
-            }
+            String lineaEscribir = cadena;
+            fileWriter.write(lineaEscribir);
         }catch(IOException e)
         {
             e.printStackTrace();
